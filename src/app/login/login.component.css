@@ -1,0 +1,114 @@
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.left{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+   
+   
+}
+
+.wrapTitle{ 
+    display: flex;
+    text-align: center ;
+    justify-content: center;
+}
+
+.imgBorder{
+    border : 2px solid #E3F2FD;
+    background-color: #E3F2FD;
+    border-radius: 100%;
+}
+
+.button{
+    border-radius: 50px;
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formField{
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.wrapLine{
+    display: flex;
+    text-align: center;
+}
+
+.line{
+    border: 1px solid ;
+}
+
+.fieldWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+mat-icon{
+    margin-right: 20px;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+}
+
+.logo >h1{
+    margin: 0;
+    color: #1565C0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.background{
+    border-radius: 50px 0 0 50px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.background > img{
+    filter: blur(12px) brightness(120%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

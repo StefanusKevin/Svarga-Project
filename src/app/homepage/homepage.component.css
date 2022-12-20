@@ -1,0 +1,89 @@
+.navatas {
+    background-color: white;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 ;
+    gap: 50px;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+mat-toolbar>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+.svarga {
+    color: #1E88E5;
+    font-family: 'AinslieW01-NormRegular', serif;
+    font-size: 200%;
+    line-height: normal;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.change{
+    text-decoration:none;
+    color: inherit;
+    font-weight: 500;
+}
+
+
+
+.rightnav {
+    font-family: 'AinslieW01-NormRegular', serif;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    color: #1E88E5;
+}
+
+.buttonLogin {
+    border: 2px solid #1E88E5;
+    border-radius: 50px;
+}
+
+
+.button {
+    border: 2px solid #1E88E5;
+    border-radius: 50px;
+    background-color: #1E88E5;
+    color: white; 
+    display: flex!important; 
+    align-items: center!important; 
+    line-height: normal;
+    gap: 5px;
+    padding: 0 20px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.buttonLogin{
+    background-color: transparent;
+    color: #1E88E5 ; 
+    border-color: gainsboro;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
