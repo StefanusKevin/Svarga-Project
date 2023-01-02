@@ -1,1 +1,85 @@
-<p>about works!</p>
+<mat-toolbar class="navatas">
+
+    <div class="logo" routerLink="/homepage" routerLinkActive="active">
+        <img class="icon" src="../assets/Icon/logo.png">
+        <h1 class="svarga"> Svarga </h1>
+    </div>
+
+    <div class="leftnav">
+
+        <a class="change" routerLink="/about" routerLinkActive="active">
+            Tentang Kami
+        </a>
+
+        <a class="change" routerLink="/product" routerLinkActive="active">
+            Layanan Kami
+        </a>
+
+        <a class="change" routerLink="/about" routerLinkActive="active">
+            Bantuan
+        </a>
+
+    </div>
+
+    <div class="rightnav">
+        <button class="button buttonRegister" routerLink="/login" routerLinkActive="active">
+            <span> Daftar Sekarang</span>
+            <img src="../assets/Icon/mousecircle.png">
+        </button>
+
+        <div class="login">
+            <button class="button buttonLogin" routerLink="/login" routerLinkActive="active">
+                Login
+            </button>
+        </div>
+    </div>
+
+</mat-toolbar>
+
+
+<body>
+    <div class="homepage">
+        <div class="container">
+            <span> Tentang Kami </span>
+            <h1>Kami akan selalu hadir untuk Anda disaat Duka</h1>
+            <p>Kami berupaya menyediakan segala sesuatu yang Anda butuhkan untuk memberikan pemakaman yang terbaik bagi
+            </p>
+            <p> orang terkasih. Anda dan keluarga dapat lebih tenang dalam mengenang mendiang terkasih. </p>
+        </div>
+
+    </div>
+    <div style="display:flex; justify-content: center; align-items: center; ">
+        <div style="display: flex; flex-direction: column; ">
+            <div style="width: 35vw;">
+                <div class="iconKonten">
+                    <img src="../../assets/Icon/profile2user.png">
+                    <h3>Tim yang Profesional</h3>
+                    <p>Kami menyediakan tim profesional dari berbagai bidang untuk membantu Anda</p>
+                </div>
+                <img class="lineBacground left" src="../../assets/Icon/Group 48.png">
+            </div>
+            <div style="width: 35vw;">
+                <div class="iconKonten">
+                    <img src="../../assets/Icon/walletmoney.png">
+                    <h3>Biaya yang bersahabat</h3>
+                    <p>Biaya yang anda keluarkan akan lebih terencana bersama kami</p>
+                </div>
+                <img class="lineBacground left" src="../../assets/Icon/Group 46.png">
+            </div>
+        </div>
+        <img src="../../assets/Picture/Intersect.png">
+        <div style="display: flex; flex-direction: column;">
+            <div class="iconKonten">
+                <img src="../../assets/Icon/lovely.png">
+                <h3>Ketenangan Batin</h3>
+                <p>Dengan adanya kami, Anda tidak perlu pusing memikirkan biaya tidak terduga atas kejadian duka</p>
+            </div>
+            <img class="lineBacground right bottom" src="../../assets/Icon/Group 50.png">
+            <div>
+                <button class="pelajariButton" routerLink="/product" routerLinkActive="active">
+                    Pelajari Selengkapnya
+                </button>
+            </div>
+        </div>
+    </div>
+</body>

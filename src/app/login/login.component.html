@@ -2,16 +2,19 @@
     <div class="wrapper">
         <div class="left">
             <div class="wrapTitle">
-                <span class="imgBorder"><img src="../../assets/Icon/logincurve.png"></span>
-                <h1>Log in to <span>Svarga</span></h1>
+                <div class="imgBorder"><img src="../../assets/Icon/logincurve.png"></div>
+                <h1>Log in to <span style="color: #1565C0;">Svarga</span></h1>
             </div>
-            <p>Selamat Datang! Silahkan log in agar kami dapat mengenal Anda dengan lebih baik</p>
+           
             <div class="form">
 
+                <p>Selamat Datang! Silahkan log in agar kami dapat mengenal Anda dengan lebih baik</p>
+                <br>
+                
                 <button class="button">
                     <img src="../assets/Icon/fb.png">
-                    <span> Log in dengan Google</span>
-                </button>
+                    <span> Log in dengan Google  </span>
+                </button><br>
                 <button class="button">
                     <img src="../assets/Icon/google.png">
                     <span> Log in dengan Facebook</span>
@@ -19,7 +22,7 @@
 
                 <div class="wrapLine">
                     <div class="line"></div>
-                    <span>atau</span>
+                    <span style="margin: 5px 10px;">atau</span>
                     <div class="line"></div>
                 </div>
 
@@ -31,7 +34,7 @@
                         </label>
                         <input type="email" formControlName="email" placeholder="input email" />
                     </div>
-                </div>
+                </div><br>
                 <div class="formField">
                     <mat-icon>lock</mat-icon>
                     <div class="fieldWrap">
@@ -41,11 +44,25 @@
                         <input [type]="hide ? 'password' : 'text'" formControlName="password"
                             placeholder="enter password" />
                     </div>
-                    <button type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    <button type="button" class="visibility" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                         [attr.aria-pressed]="hide">
                         <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
                     </button>
                 </div>
+
+                <div class="tambahanLogin">
+                    <mat-checkbox >Check me!</mat-checkbox>
+                    <a>Lupa password?</a>
+                </div>
+
+                <button class="button Login" routerLink="/homepage" routerLinkActive="active">
+                    <span> Login</span>
+                </button><br>
+
+                <div class="signup">
+                    <p>Belum punya akun? <span>Daftar Sekarang</span></p>
+                </div>
+                
 
             </div>
         </div>

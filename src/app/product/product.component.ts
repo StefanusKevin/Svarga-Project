@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
+  kontenLayanan: boolean = false
+
+
+jaminanButton(){
+  this.kontenLayanan = false
+}
+
+konsultanButton(){
+ this.kontenLayanan = true
+}
+
 }

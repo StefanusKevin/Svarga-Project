@@ -1,10 +1,9 @@
 .navatas {
     background-color: white;
     display: flex;
-    background-color: white;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 ;
+    padding: 50px 0;
     gap: 50px;
 }
 
@@ -37,10 +36,11 @@ mat-toolbar>div>img {
     gap: 30px;
 }
 
-.change{
-    text-decoration:none;
+.change {
+    text-decoration: none;
     color: inherit;
     font-weight: 500;
+    color: black;
 }
 
 
@@ -67,9 +67,9 @@ mat-toolbar>div>img {
     border: 2px solid #1E88E5;
     border-radius: 50px;
     background-color: #1E88E5;
-    color: white; 
-    display: flex!important; 
-    align-items: center!important; 
+    color: white;
+    display: flex !important;
+    align-items: center !important;
     line-height: normal;
     gap: 5px;
     padding: 0 20px;
@@ -80,10 +80,56 @@ mat-toolbar>div>img {
     justify-content: center;
 }
 
-.buttonLogin{
+.buttonLogin {
     background-color: transparent;
-    color: #1E88E5 ; 
+    color: #1E88E5;
     border-color: gainsboro;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+/* ========================================== */
+/* Homepage */
+/* ========================================== */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.container>h1 {
+    font-weight: 600;
+    font-size: 200%;
+}
+
+.container>p {
+    font-weight: 300;
+    font-size: 150%;
+    line-height: 24px;
+}
+
+.wrapButton {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+body > img {
+    position: absolute;
+    z-index: -5;
+    top: 0;
 }

@@ -1,37 +1,58 @@
 <mat-toolbar class="navatas">
 
-    <div class="logo" routerLink="/homepage" routerLinkActive="active">
-      <img class="icon" src="../assets/Icon/logo.png">
-      <h1 class="svarga"> Svarga </h1>
-    </div>
-    
-    <div class="leftnav">
- 
-        <a class="change" routerLink="/about" routerLinkActive="active">
-          Tentang Kami
-        </a>
-   
-        <a class="change" routerLink="/product" routerLinkActive="active">
-          Layanan Kami
-        </a>
-   
-        <a class="change" routerLink="/about" routerLinkActive="active">
-          Bantuan
-        </a>
-     
-    </div>
+  <div class="logo" routerLink="/homepage" routerLinkActive="active">
+    <img class="icon" src="../assets/Icon/logo.png">
+    <h1 class="svarga"> Svarga </h1>
+  </div>
 
-    <div class="rightnav">
-        <button class="button buttonRegister"  routerLink="/login" routerLinkActive="active">
-         <span> Daftar Sekarang</span>
-          <img src="../assets/Icon/mousecircle.png">
-        </button>
-   
+  <div class="leftnav">
+
+    <a class="change" routerLink="/about" routerLinkActive="active">
+      Tentang Kami
+    </a>
+
+    <a class="change" routerLink="/product" routerLinkActive="active">
+      Layanan Kami
+    </a>
+
+    <a class="change" routerLink="/about" routerLinkActive="active">
+      Bantuan
+    </a>
+
+  </div>
+
+  <div class="rightnav">
+    <div class="login">
+      <button class="button buttonLogin" routerLink="/login" routerLinkActive="active">
+        Login
+      </button>
+    </div>
+  </div>
+
+</mat-toolbar>
+
+<body>
+  <div class="homepage">
+    <div class="container">
+      <h1>Aman Tentram untuk Orang Terkasih</h1>
+      <h1> <span style="color: #1565C0;"> Svarga </span> Hadir Menemani</h1>
+      <p>Kematian menjadi suatu peristiwa yang menyedihkan dan penuh haru. namun pasti </p>
+      <p> akan terjadi.<span style="color: #1565C0;"> Svarga </span>
+        hadir disisi anda untuk memberikan jaminan pemakaman yang</p>
+      <p> aman dan nyaman baik dari segi pembiayaan maupun prosesi pemakaman </p>
+    </div>
+    <div class="wrapButton">
+      <button class="button buttonRegister" routerLink="/login" routerLinkActive="active">
+        <span> Daftar Sekarang</span>
+        <img src="../assets/Icon/mousecircle.png">
+      </button>
       <div class="login">
         <button class="button buttonLogin" routerLink="/login" routerLinkActive="active">
-          Login
+          Pelajari Selengkapnya
         </button>
       </div>
     </div>
 
-</mat-toolbar>
+  </div>
+  <img src="../../assets/Picture/Group 44.png">
+</body>

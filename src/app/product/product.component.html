@@ -1,1 +1,159 @@
-<p>product works!</p>
+<mat-toolbar class="navatas">
+
+    <div class="logo" routerLink="/homepage" routerLinkActive="active">
+        <img class="icon" src="../assets/Icon/logo.png">
+        <h1 class="svarga"> Svarga </h1>
+    </div>
+
+    <div class="leftnav">
+
+        <a class="change" routerLink="/about" routerLinkActive="active">
+            Tentang Kami
+        </a>
+
+        <a class="change" routerLink="/product" routerLinkActive="active">
+            Layanan Kami
+        </a>
+
+        <a class="change" routerLink="/about" routerLinkActive="active">
+            Bantuan
+        </a>
+
+    </div>
+
+    <div class="rightnav">
+        <button class="button buttonRegister" routerLink="/login" routerLinkActive="active">
+            <span> Daftar Sekarang</span>
+            <img src="../assets/Icon/mousecircle.png">
+        </button>
+
+        <div class="login">
+            <button class="button buttonLogin" routerLink="/login" routerLinkActive="active">
+                Login
+            </button>
+        </div>
+    </div>
+</mat-toolbar>
+
+<body>
+    <div class="homepage">
+        <div class="container">
+            <span> Layanan Kami </span>
+            <h1>Apapun pilihan Anda, Pelayanan akan selalu kami</h1>
+            <h1>berikan sepenuh hati</h1>
+            <p>Kami selalu berusaha memberikan pilihan layanan sesuai dengan yang Anda inginkan untuk orang terkasih</p>
+        </div>
+        <div class="wrapButton">
+            <div class="wrapLayananButton" [ngClass]="!kontenLayanan?'active':''">
+                <button class="layananButton" (click)="jaminanButton()">
+                    Jaminan Pemakaman
+                </button>
+            </div>
+            <div class="wrapLayananButton" [ngClass]="kontenLayanan?'active':''">
+                <button class="layananButton" (click)="konsultanButton()">
+                    Konsultan Pemakaman
+                </button>
+            </div>
+        </div>
+        <div style="width: 90%; justify-content: center; margin-left: auto;margin-right: auto;">
+            <app-product-jaminan *ngIf="!kontenLayanan"></app-product-jaminan>
+            <app-product-konsultan *ngIf="kontenLayanan"></app-product-konsultan>
+        </div>
+
+        <!-- <mat-tab-group>
+            <mat-tab label="Jaminan Pemakaman"> Jaminan Pemakaman
+
+                <section style="display: flex;">
+
+                    <mat-card class="card-paket">
+                        <mat-card-header>
+                            <mat-card-title>Paket Terjamin</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><mat-icon>check_circle_outline</mat-icon> Penanganan Jenazah </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Jenazah (VIP) </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Prosesi Pemakaman </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Peti Mati & Nisan </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Keluarga </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Pengurusan Administrasi </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a>Lihat Selengkapnya...</a><br>
+                            <button mat-button>Pilih Paket</button>
+                        </mat-card-actions>
+                    </mat-card>
+
+                    <mat-card class="card-paket">
+                        <mat-card-header>
+                            <mat-card-title>Paket Damai</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><mat-icon>check_circle_outline</mat-icon> Penanganan Jenazah </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Jenazah (VIP) </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Prosesi Pemakaman </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Peti Mati & Nisan </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Keluarga </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Pengurusan Administrasi </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Pelayat ( 1 Bus) </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsumsi Pelayat </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Dekorasi Rumah Duka </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a>Lihat Selengkapnya...</a><br>
+                            <button mat-button>Pilih Paket</button>
+                        </mat-card-actions>
+                    </mat-card>
+
+                    <mat-card class="card-paket">
+                        <mat-card-header>
+                            <mat-card-title>Paket Sejahtera</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><mat-icon>check_circle_outline</mat-icon> Penanganan Jenazah </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Jenazah (VIP) </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Prosesi Pemakaman </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Peti Mati & Nisan </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Keluarga </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Pengurusan Administrasi </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Transportasi Pelayat ( 1 Bus) </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsumsi Pelayat </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Dekorasi Rumah Duka </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Rumah Duka (opsional) </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a>Lihat Selengkapnya...</a><br>
+                            <button mat-button>Pilih Paket</button>
+                        </mat-card-actions>
+                    </mat-card>
+
+                </section>
+
+            </mat-tab>
+
+            <mat-tab label="Konsultan Pemakaman">Konsultan Pemakaman
+
+                <section>
+                    <mat-card class="card-paket">
+                        <mat-card-header>
+                            <mat-card-title>Konsultan Pemakaman</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsultasi biaya pemakaman</p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsultasi vendor dekorasi </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsultasi cathering </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsultasi TPU </p>
+                            <p><mat-icon>check_circle_outline</mat-icon> Konsultasi Psikologi berkaitan dengan kedukaan
+                                (opsional) </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a>Lihat Selengkapnya...</a><br>
+                            <button mat-button>Pilih Paket</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </section>
+
+            </mat-tab>
+        </mat-tab-group> -->
+
+    </div>
+</body>
